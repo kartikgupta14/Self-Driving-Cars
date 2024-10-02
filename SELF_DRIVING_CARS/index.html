@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Self-Driving Car (Kartik/Preeti)</title>
+    <link rel="icon" type="image/x-icon" href="\favicon\favicon (2).ico">
+    
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+  
+    <canvas id="carCanvas"></canvas>
+    <div>
+        <style>
+            /* Style to remove border */
+            #mutationAmount {
+                border: none;
+                outline: none; 
+                
+            }
+            #mutationAmount {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+        </style>
+        
+        <style>
+            #carCount {
+                border: none; 
+                outline: none; 
+               
+            }
+            #carCount {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+        </style>
+        
+            <select id="mutationAmount" 
+                onchange="localStorage.setItem('mutationAmount',this.value)">
+              
+            </select>
+        </div>
+        
+        
+            <select name="carCount" id="carCount" 
+                onchange="localStorage.setItem('carCount',this.value)">
+                <option value="1"></option>
+                
+            </select>
+        </div>
+    </div>
+    
+    <canvas id="networkCanvas"></canvas>
+    <script src="visualizer.js"></script>
+    <script src="network.js"></script>
+    <script src="sensor.js"></script>
+    <script src="utils.js"></script>
+    <script src="road.js"></script>
+    <script src="controls.js"></script>
+    <script src="car.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

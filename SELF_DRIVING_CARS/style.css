@@ -1,0 +1,20 @@
+
+body{
+    margin:0;
+    background:white;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#networkCanvas{
+    background: white;
+
+}
+#carCanvas{
+    background:grey;
+   
+}
+
+
